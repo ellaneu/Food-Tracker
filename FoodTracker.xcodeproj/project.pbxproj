@@ -13,6 +13,7 @@
 		ED20F4612314344C0072B5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20F4602314344C0072B5B7 /* Assets.xcassets */; };
 		ED20F4642314344C0072B5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20F4622314344C0072B5B7 /* LaunchScreen.storyboard */; };
 		ED20F46F2314344C0072B5B7 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20F46E2314344C0072B5B7 /* FoodTrackerTests.swift */; };
+		ED20F47A2318253B0072B5B7 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20F4792318253B0072B5B7 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		ED20F46A2314344C0072B5B7 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20F46E2314344C0072B5B7 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		ED20F4702314344C0072B5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED20F4792318253B0072B5B7 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				ED20F4592314344A0072B5B7 /* AppDelegate.swift */,
 				ED20F45B2314344A0072B5B7 /* ViewController.swift */,
+				ED20F4792318253B0072B5B7 /* RatingControl.swift */,
 				ED20F45D2314344A0072B5B7 /* Main.storyboard */,
 				ED20F4602314344C0072B5B7 /* Assets.xcassets */,
 				ED20F4622314344C0072B5B7 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED20F45C2314344A0072B5B7 /* ViewController.swift in Sources */,
+				ED20F47A2318253B0072B5B7 /* RatingControl.swift in Sources */,
 				ED20F45A2314344A0072B5B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
