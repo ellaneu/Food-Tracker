@@ -56,6 +56,7 @@
                                     <outlet property="nameLabel" destination="w43-Xi-fiO" id="Xrm-Jb-sju"/>
                                     <outlet property="photoImageView" destination="esQ-wM-hWf" id="KY4-Dd-L4h"/>
                                     <outlet property="ratingControl" destination="F7w-cF-8hc" id="1ke-91-BLk"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="v9o-1g-E41"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,8 +85,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Eyr-yH-4fX">
-                                <rect key="frame" x="20" y="104" width="335" height="461.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Eyr-yH-4fX">
+                                <rect key="frame" x="20" y="104" width="335" height="455.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-y7-dMK">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -103,8 +104,8 @@
                                             <outletCollection property="gestureRecognizers" destination="LdK-iB-7WC" appends="YES" id="uQb-yi-geA"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LPY-qO-r9N" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="41.5" y="411.5" width="252" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LPY-qO-r9N" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="41.5" y="411.5" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -121,7 +122,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="vZV-Zj-ynf">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xA5-AM-HpB"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xA5-AM-HpB">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="X64-re-fiz"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Q5s-Zr-guf">
                             <connections>
                                 <segue destination="iJD-mN-waH" kind="unwind" unwindAction="unwindToMealListWithSender:" id="rIV-o8-62b"/>
@@ -179,10 +184,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJz-SN-FGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1126" y="555"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="v9o-1g-E41"/>
+    </inferredMetricsTieBreakers>
 </document>
